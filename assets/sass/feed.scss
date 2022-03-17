@@ -11,7 +11,15 @@
 
   .column_2 {
     form {
-      textarea {
+      .intro_text {
+        height: 2rem;
+        width: 25rem;
+        margin-bottom: 2rem;
+        background-color: black;
+        font-size: 17px;
+      }
+      input::placeholder {
+        color: #636363;
         width: 25rem;
         background-color: black;
         font-size: 17px;

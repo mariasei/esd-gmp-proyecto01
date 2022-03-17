@@ -9,6 +9,7 @@ window.addEventListener("load", () => {
   initModalWindowEvents();
   initTweetEvents();
   initSearchEvent();
+  initAddNewTweet();//?? NO LO RECONOCE
 });
 
 // RENDER TWEETS FUNCIONA
@@ -84,7 +85,7 @@ const initTweetEvents = () => {
     const buttonRT = tweet.querySelector("button.button_rts");
     buttonRT.addEventListener("click", () => {
       data[i].content.rt++;
-      renderTweets();
+      renderTweets()
     });
     // LIKES
     const buttonLikes = tweet.querySelector("button.button_likes");
@@ -92,28 +93,6 @@ const initTweetEvents = () => {
       data[i].content.likes++;
       renderTweets();
     });
-  });
-};
-
-// VENTANA MODAL FUNCIONA
-
-const initModalWindowEvents = () => {
-  const tweetWindowButton = document.querySelector(".new_tweet_modal");
-  const modalWindow = document.querySelector(".modal_window");
-  const closeButton = document.querySelector(".button_close");
-
-  tweetWindowButton.addEventListener("click", () => {
-    modalWindow.classList.add("opened");
-  });
-
-  closeButton.addEventListener("click", () => {
-    modalWindow.classList.remove("opened");
-  });
-
-  window.addEventListener("keyup", (ev) => {
-    if (ev.key == "Escape") {
-      modalWindow.classList.remove("opened");
-    }
   });
 };
 
@@ -153,18 +132,26 @@ const initSearchEvent = () => {
 
 const initAddNewTweet = () => {
   const input = document.querySelector(".intro_text");
-  const submitButton = document.querySelector(".submit");
-  const modalWindow = document.querySelector(".modal_window");
+  const submitButton = document.querySelector(".submit_button");
 
   submitButton.addEventListener("click", (ev) => {
       ev.preventDefault();
       const value = input.value;
-      todoListData.push({
-          title: value,
-          done: false,
+      data.push({
+        user: {
+          pic: "https://robohash.org/suscipitistesapiente.png?size=50x50&set=set1",
+          name: "Maria Moreno",
+          username: "mariamoreno"
+        },
+        content: {
+            time: 7,
+            tweet: value,
+            comments: 75,
+            likes: 902,
+            rt: 796
+        },
       });
-      modalWindow.classList.remove("opened");
-      renderTodoList();
+      renderTweets();
   });
 }
 
@@ -187,6 +174,23 @@ const updateCharacterBar = () => {
   progressBar.style.width = (doneItems / todoListData.length) * 100 + "%";
 }
 
+
+const initAddTodoEvent = () => {
+  const input = document.querySelector(".intro_text");
+  const submitButton = document.querySelector(".submit");
+  const modalWindow = document.querySelector(".modal_window");
+
+  submitButton.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      const value = input.value;
+      todoListData.push({
+          title: value,
+          done: false,
+      });
+      modalWindow.classList.remove("opened");
+      renderTodoList();
+  });
+}
 
 //
 //
@@ -245,3 +249,25 @@ const updateCharacterBar = () => {
 //     initEventTweets()
 // }
 
+
+// VENTANA MODAL FUNCIONA
+
+const initModalWindowEvents = () => {
+  const tweetWindowButton = document.querySelector(".new_tweet_modal");
+  const modalWindow = document.querySelector(".modal_window");
+  const closeButton = document.querySelector(".button_close");
+
+  tweetWindowButton.addEventListener("click", () => {
+    modalWindow.classList.add("opened");
+  });
+
+  closeButton.addEventListener("click", () => {
+    modalWindow.classList.remove("opened");
+  });
+
+  window.addEventListener("keyup", (ev) => {
+    if (ev.key == "Escape") {
+      modalWindow.classList.remove("opened");
+    }
+  });
+};
