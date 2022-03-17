@@ -1,0 +1,130 @@
+// .modal_window {
+//     background-color: rgba(0, 0, 0, 0.4);
+//     display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     visibility: visible;
+
+//     &.opened {
+//       visibility: visible;
+//     }
+
+//     .info_new_task_container {
+//       width: 600px;
+//       margin: 45px;
+//       background-color: #EC5938;
+//       height: 330px;
+//       border-radius: 28px;
+//       padding: 45px;
+//       padding-bottom: 90px;
+//       padding-top: 90px;
+//       box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+
+//       .form_new_task {
+//         justify-content: space-between;
+//         text-align: center;
+
+//         .title_new_task {
+//           display: block;
+//           font-size: 22pt;
+//           font-weight: bold;
+
+//         }
+
+//         input.intro_text {
+//           margin: auto;
+//           margin-bottom: 15px;
+//           justify-self: center;
+//           display: block;
+//           padding: 15px;
+//           background-color: #EC5938;
+//           border: 2px solid white;
+//           color: white;
+//           text-align: center;
+//           width: 225px;
+
+//         }
+
+//         ::placeholder {
+//           color: white;
+//         }
+
+//         .añadir {
+//           margin-right: 15px;
+//           background-color: #BED6C6;
+//           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
+//         }
+
+//         .cancelar {
+//           background-color: #EDDCD2;
+//           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
+//         }
+
+//       }
+//     }
+//   }
+
+.modal_window {
+  padding: 20px;
+  background-color: rgba(23, 73, 138, 0.4);
+  visibility: visible;
+
+  &.opened {
+    visibility: visible;
+  }
+
+  .modal_window_container {
+    width: 440px;
+    height: 210px;
+    padding: 15px;
+    background-color: #000000;
+    border-radius: 16px;
+
+    .cerrar {
+      display: block;
+      margin-right: 10px;
+    }
+
+    .NOSE {
+        margin-top: 10px;
+        display: flex;
+        .column_1 {
+            margin-right: 15px;
+          }
+        
+          .column_2 {
+            form {
+              textarea {
+                  width: 21rem;
+                  height: 90px;
+                background-color: black;
+                font-size: 17px;
+                color: #6f767c;
+              }
+        
+              .actions_tweet {
+                display: flex;
+                justify-content: space-between;
+                .add_picture {
+                  img {
+                    display: inline;
+                    width: auto;
+                    margin-right: 15px;
+                  }
+                }
+        
+                input {
+                  display: flex;
+                  background-color: #4a99e9;
+                  border-radius: 99999px;
+                  font-size: 14px;
+                  padding: 4px 16px;
+                }
+              }
+            }
+          }
+    }
+  }
+}

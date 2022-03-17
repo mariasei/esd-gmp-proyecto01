@@ -1,0 +1,75 @@
+.modal_window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgba(41, 115, 184, 0.425);
+    justify-content: center;
+    visibility: hidden;
+
+    &.opened {
+        visibility: visible;
+    }
+
+    .modal_window_container {
+        width: 440px;
+        height: 170px;
+        background-color: black;
+        border-radius: 16px;
+        
+        margin-top: 4rem;
+        padding: 20px 15px;
+
+
+        .cerrar {
+            display: flex;
+        }
+
+        .NOSE {
+            margin-top: 15px;
+            display: flex;
+
+            .column_1 {
+                margin-right: 15px;
+            }
+
+            .column_2 {
+                form {
+
+                    textarea {
+                        width: 22rem;
+                        background-color: black;
+                        font-size: 17px;
+                        color: #6f767c;
+                    }
+
+                    .actions_tweet {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .add_picture {
+                            img {
+                                display: inline;
+                                width: auto;
+                                margin-right: 15px;
+                            }
+                        }
+
+                        input {
+                            background-color: #4a99e9;
+                            border-radius: 99999px;
+                            font-size: 14px;
+                            padding: 4px 16px;
+                        }
+
+                        :hover {
+                            background-color: #3781cc;
+                            transition: .2s  ease-in-out;
+                            border-radius: 99999px;
+                          }
+                    }
+                }
+            }
+        }
+    }
+}

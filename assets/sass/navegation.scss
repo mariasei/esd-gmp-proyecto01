@@ -1,0 +1,66 @@
+// BARRA NAVEGACION
+.nav_bar {
+  .logo_container {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
+  .pages_container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    .pages_header {
+      .page {
+        display: flex;
+        padding: 8px 10px;
+
+        .page_icon_container {
+          width: 28px;
+        }
+
+        h1 {
+          margin-left: 17px;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 20px;
+          color: rgb(207, 207, 207);
+        }
+
+        #home {
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.new_tweet_button_container {
+  button {
+    background-color: #4a99e9;
+    border-radius: 99999px;
+    width: 198px;
+    height: 40px;
+    text-align: center;
+    font-weight: 400;
+
+  }
+
+  :hover {
+    background-color: #3781cc;
+    transition: .2s  ease-in-out;
+    border-radius: 99999px;
+  }
+}
+
+// FEED PRINCIPAL
+.main_twitter {
+  border-left: 1px solid #868686;
+  border-right: 1px solid #868686;
+}
+
+.head_container {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}

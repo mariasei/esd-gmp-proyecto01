@@ -2,14 +2,259 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>vitejs_boiler</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/icons8-twitter.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Inicio / Twitter</title>
   </head>
+
   <body>
-    <div class="app">
-      <h1 class="text-purple-500 flex items-center">Aquí empieza el boiler... <i class="ph-smiley flex"></i></h1>
+    <div class="twitter_container">
+      <!-- BARA IZQ NAV TWITTER -->
+      <nav class="nav_bar">
+        <div class="logo_container">
+          <img src="./assets/images/Twitter_nav_icon.svg" alt="" />
+        </div>
+        <div class="pages_container">
+          <ul class="pages_header">
+            <li class="page" id="home">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/home_full.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title" id="home">Home</h1>
+            </li>
+            <li class="page" id="explore">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/explore_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Explore</h1>
+            </li>
+            <li class="page" id="notifications">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/ring_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Notifications</h1>
+            </li>
+            <li class="page" id="messages">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/dm_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Messages</h1>
+            </li>
+            <li class="page" id="bookmarks">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/dm_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Bookmarks</h1>
+            </li>
+            <li class="page" id="lists">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/ring_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Lists</h1>
+            </li>
+            <li class="page" id="profile">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/profile_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">Profile</h1>
+            </li>
+            <li class="page" id="more">
+              <div class="page_icon_container">
+                <img
+                  class="page_icon"
+                  src="./assets/images/more_empty.svg"
+                  alt=""
+                />
+              </div>
+              <h1 class="page_title">More</h1>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BOTÓN A VENTANA MODAL -->
+        <div class="new_tweet_button_container">
+          <button class="new_tweet_modal" type="button">
+            <p>Tweet</p>
+          </button>
+        </div>
+      </nav>
+
+      <!-- FEED TWITTER -->
+      <main class="main_twitter">
+        <!-- LOGOS CABEZA FEED -->
+        <div class="head_container">
+          <h1 class="title_feed_page">Home</h1>
+          <img
+            src="./assets/images/shine_empty.svg"
+            alt=""
+            class="icon_feed_page"
+          />
+        </div>
+
+        <!-- ESCRIBIR TWEET FEED -->
+        <div class="new_tweet_container">
+          <div class="column_1">
+            <img
+              src="./assets/images/foto_perfil.png"
+              alt=""
+              class="profile_picture"
+            />
+          </div>
+
+          <div class="column_2">
+            <form action="">
+              <textarea name="" id="" placeholder="What's happening"></textarea>
+              <div class="actions_tweet">
+                <div class="add_picture">
+                  <img src="./assets/images/image.svg" alt="" />
+                  <img src="./assets/images/gif.svg" alt="" />
+                </div>
+                <div class="submit_container">
+                  <input type="submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- FEED TWEETS -->
+
+        <div class="tweets">
+        </div>
+      </main>
+
+      <!-- LATERAL BUSQUEDA -->
+      <aside class="search_trending">
+        <div class="search_bar">
+          <img class="search_icon" src="./assets/images/search.svg" alt="" />
+          <input
+            class="search_input"
+            type="text"
+            placeholder="Search on Twitter"
+          />
+        </div>
+
+        <div class="trending_topic_container">
+          <h1 class="trending_header">Trending Topic</h1>
+
+          <div class="hashtags_container">
+            <div class="trending">
+              <img
+                class="trending_icon"
+                src="./assets/images/explore_empty.svg"
+                alt=""
+              />
+              <h2 class="trending_title">Term 01</h2>
+            </div>
+
+            <div class="trending">
+              <img
+                class="trending_icon"
+                src="./assets/images/explore_empty.svg"
+                alt=""
+              />
+              <h2 class="trending_title">Term 02</h2>
+            </div>
+
+            <div class="trending">
+              <img
+                class="trending_icon"
+                src="./assets/images/explore_empty.svg"
+                alt=""
+              />
+              <h2 class="trending_title">Term 03</h2>
+            </div>
+
+            <div class="trending">
+              <img
+                class="trending_icon"
+                src="./assets/images/explore_empty.svg"
+                alt=""
+              />
+              <h2 class="trending_title">Term 04</h2>
+            </div>
+
+            <div class="trending">
+              <img
+                class="trending_icon"
+                src="./assets/images/explore_empty.svg"
+                alt=""
+              />
+              <h2 class="trending_title">Term 05</h2>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
+
+    <!-- VENTANA MODAL -->
+
+    <div class="modal_window">
+      <div class="modal_window_container">
+        <div class="cerrar">
+          <button class="button_close">
+            <img src="./assets/images/cerrar.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="NOSE">
+          <div class="column_1">
+            <img src="./assets/images/foto_perfil.png" alt="" />
+          </div>
+
+          <div class="column_2">
+            <form action="">
+              <textarea name="" id="" placeholder="What's happening"></textarea>
+              <div class="actions_tweet">
+                <div class="add_picture">
+                  <img src="./assets/images/image.svg" alt="" />
+                  <img src="./assets/images/gif.svg" alt="" />
+                </div>
+                <div class="submit_container">
+                  <input class="search_box" type="submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/app/main.js"></script>
   </body>
 </html>

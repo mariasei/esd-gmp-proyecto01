@@ -1,0 +1,54 @@
+.search_trending {
+    margin-top: 10px;
+    margin-left: 27px;
+  
+    .search_icon {
+      margin-right: 13px;
+      width: 12px;
+      display: flex;
+    }
+  
+    .search_bar {
+      outline: none;
+      padding: 12px 14px;
+      height: 36px;
+      display: flex;
+      background-color: #212327;
+      border-radius: 99999px;
+  
+      input {
+        font-size: 14px;
+        background-color: #212327;;
+      }
+  
+    }
+  
+    .trending_topic_container {
+      margin-top: 25px;
+      background-color: #212327;
+      border-radius: 16px;
+      padding: 24px 8px 8px 12px;
+  
+      .trending_header {
+        font-size: 16px;
+      }
+  
+      .hashtags_container {
+        margin-top: 32px;
+  
+        .trending {
+          display: flex;
+          padding-bottom: 16px;
+  
+          .trending_icon {
+            margin-right: 5px;
+          }
+    
+          .trending_title {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  

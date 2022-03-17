@@ -1,0 +1,35 @@
+@import "lib/vars.scss";
+@import "lib/mixins.scss";
+@import "lib/fontface.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./modalwindow.scss";
+@import "./navegation.scss";
+@import "./trending.scss";
+@import "./feed.scss";
+@import "./trending.scss";
+
+* {
+  // border: 1px solid rgb(255, 134, 219);
+  :focus { outline: none; } 
+}
+
+html,
+body {
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.twitter_container {
+  // width: 1000px;
+  display: grid;
+  grid-template-columns: 220px 490px 290px;
+}
+
+svg {
+  background-color: none;
+  color: white;
+}

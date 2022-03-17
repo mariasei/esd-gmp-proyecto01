@@ -1,0 +1,115 @@
+// NEW TWEET MAIN
+
+.new_tweet_container {
+  display: flex;
+  padding: 20px 15px;
+  border-bottom: 1px solid #868686;
+
+  .column_1 {
+    margin-right: 15px;
+  }
+
+  .column_2 {
+    form {
+      textarea {
+        width: 25rem;
+        background-color: black;
+        font-size: 17px;
+      }
+
+      .actions_tweet {
+        display: flex;
+        justify-content: space-between;
+        .add_picture {
+          img {
+            display: inline;
+            width: auto;
+            margin-right: 15px;
+          }
+        }
+        input {
+          display: flex;
+          background-color: #4a99e9;
+          border-radius: 99999px;
+          font-size: 14px;
+          padding: 4px 16px;
+        }
+        
+        :hover {
+          background-color: #3781cc;
+          transition: .2s  ease-in-out;
+          border-radius: 99999px;
+        }
+      }
+    }
+  }
+}
+
+
+// ESTILOS DE UN TWEET
+.tweets {
+  .tweets_container {
+    display: flex;
+    padding: 27px 15px;
+    border-bottom: 1px solid #868686;
+    .column_1 {
+      margin-right: 15px;
+  
+      .profile_picture {
+        width: 98px;
+      }
+    }
+    .column_2 {
+      .container_tweet {
+        margin-right: 60px;
+  
+        .info_user {
+          display: flex;
+          margin-bottom: 12px;
+  
+          .name {
+            font-weight: bold;
+            margin-right: 6px;
+          }
+  
+          .username {
+            color: #868686;
+            margin-right: 15px;
+          }
+          .time_tweet {
+            color: #868686;
+          }
+        }
+        .tweet_content {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 14px;
+        }
+        .interaction_bar {
+          display: flex;
+  
+          .interaction_icons {
+            margin-right: 10px;
+            display: inline;
+          }
+
+          .retweet {
+
+            &.click {
+              fill: #3781cc;
+            }
+          }
+
+
+          .number {
+            font-size: 12px;
+            line-height: 20px;
+            color: #868686;
+            margin-right: 40px;
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}
