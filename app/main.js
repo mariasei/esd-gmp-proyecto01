@@ -155,9 +155,6 @@ const initAddNewTweet = () => {
   });
 }
 
-// OLE OLE
-//OLE
-
 const updateCharacterBar = () => {
   const amountTotal = document.querySelector(".total_tasks");
   const amountDone = document.querySelector(".amount_done");
