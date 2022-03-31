@@ -86,7 +86,7 @@ const renderTweets = (data = rawdata) => {
   initTweetEvents();
 };
 
-//FUNCIONA SOLO EN EL PRIMER TWEET??
+// AÑADIR LIKES Y CAMBIAR ESTADO BOTONES 
 
 const initTweetEvents = () => {
   const tweets = document.querySelectorAll(".tweets_container"); // CAMBIAR A LOS CONTENEDORES DE CADA TWEET
