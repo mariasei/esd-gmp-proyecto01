@@ -190,3 +190,34 @@ $font_route_a: '../fonts/source-sans';
     font-weight: 900;
     font-style: italic;
   }
+  
+  /* -- Roboto-Condensed-Family -- */
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./fonts/Roboto/RobotoCondensed-Bold.woff') format('woff'), url('./fonts/Roboto/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./fonts/Roboto/RobotoCondensed-BoldItalic.woff') format('woff'), url('./fonts/Roboto/RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./fonts/Roboto/RobotoCondensed-Light.woff') format('woff'), url('./fonts/Roboto/RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./fonts/Roboto/RobotoCondensed-LightItalic.woff') format('woff'), url('./fonts/Roboto/RobotoCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  

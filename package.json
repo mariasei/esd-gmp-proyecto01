@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "modern-css-reset": "^1.4.0",
-    "phosphor-icons": "^1.4.2"
+    "phosphor-icons": "^1.4.2",
+    "roboto-fontface": "^0.10.0"
   }
 }

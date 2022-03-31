@@ -8,7 +8,7 @@
     visibility: hidden;
 
     &.opened {
-        visibility: visible;
+        visibility:  visible;
     }
 
     .modal_window_container {
@@ -66,7 +66,7 @@
                             background-color: #3781cc;
                             transition: .2s  ease-in-out;
                             border-radius: 99999px;
-                          }
+                        }
                     }
                 }
             }

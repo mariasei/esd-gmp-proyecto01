@@ -1,7 +1,7 @@
 @import "lib/vars.scss";
 @import "lib/mixins.scss";
 @import "lib/fontface.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "./modalwindow.scss";
 @import "./navegation.scss";
 @import "./trending.scss";
@@ -21,15 +21,110 @@ body {
   display: flex;
   color: white;
   justify-content: center;
+
+  .page {
+    display: flex;
+  }
 }
 
 .twitter_container {
   // width: 1000px;
   display: grid;
-  grid-template-columns: 220px 490px 290px;
+  grid-template-columns: 2fr 490px 2fr;
+  min-height: 100vh;
 }
 
-svg {
-  background-color: none;
-  color: white;
+// GRID
+
+
+@media screen and (max-width: 1000px) {
+  .twitter_container {
+    grid-template-columns: 1fr 390px 1fr;
+  }
+
+  .page {
+    display: flex;
+  }
 }
+
+@media screen and (max-width: 900px) {
+  .twitter_container {
+    grid-template-columns: 1fr 320px 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .twitter_container {
+    grid-template-columns: 70px 300px 1fr;
+  }
+  
+  .nav_bar {
+    .page {
+      padding-bottom: none;
+      margin-bottom: inherit;
+      display: block;
+      margin-bottom: -25px;
+
+      .page_icon {
+        width: 20px;
+      }
+    }
+    .page_title {
+      visibility: hidden;
+    }
+
+    .new_tweet_button_container {
+      .new_tweet_modal {
+        width: 60px;
+        p {
+          visibility: hidden;
+        }
+        img {
+          visibility: visible;
+        }
+      }
+    }
+
+  }
+
+  .tweets {
+    .column_2 {
+      width: 100%;
+    }
+  }
+}
+
+// .container_todo {
+//   display: grid;
+//   grid-template-columns:  1fr 760px 1fr;
+//   grid-template-rows: auto 1fr;
+//   grid-gap: 0;
+//   min-height: 100vh;
+  
+//   .header {
+//     grid-area: 1 / 2 / span 1 / span 1;
+//   }
+
+//   .main {
+//     grid-area: 2 / 2 / span 1 / span 1;
+//   }
+
+//   .modal_window {
+//     grid-area: 1 / 1 / -1 / -1;
+//     z-index: 3;
+//   }
+// }
+
+// input {
+//   background-color: none;
+//   border: none;
+//   height: 45px;
+//   width: 105px;
+//   border-radius: 10px;
+// }
+
+
+// button {
+//   border: none;
+//   background: none;
+// }

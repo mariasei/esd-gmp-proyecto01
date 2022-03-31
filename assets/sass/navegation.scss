@@ -1,5 +1,6 @@
 // BARRA NAVEGACION
 .nav_bar {
+
   .logo_container {
     padding-top: 15px;
     padding-left: 10px;
@@ -10,12 +11,15 @@
     margin-bottom: 40px;
 
     .pages_header {
+      
       .page {
-        display: flex;
         padding: 8px 10px;
 
         .page_icon_container {
           width: 28px;
+          img.page_icon {
+            width: 2rem;
+          }
         }
 
         h1 {
@@ -43,13 +47,20 @@
     height: 40px;
     text-align: center;
     font-weight: 400;
-
   }
 
   :hover {
     background-color: #3781cc;
     transition: .2s  ease-in-out;
     border-radius: 99999px;
+  }
+
+  img {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 10px;
+    width: 40px;
+    visibility: hidden;
   }
 }
 
