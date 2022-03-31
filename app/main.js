@@ -113,7 +113,7 @@ const initTweetEvents = () => {
       renderTweets();
     })
 
-    //BOTÓN LIKE
+    //BOTÓN RTS tampoco funciona
     const moreRTS = tweet.querySelector(".likes");
     moreRTS.addEventListener("click", () => {
       moreLikes.classList.add("true")
@@ -195,25 +195,6 @@ const initAddNewTweet = () => {
     renderTweets();
   });
 };
-
-// const updateCharacterBar = () => {
-//   const amountTotal = document.querySelector(".total_tasks");
-//   const amountDone = document.querySelector(".amount_done");
-//   const progressBar = document.querySelector(".progress_bar_completed");
-
-//   let doneItems = 0;
-//   for (let i = 0; i < todoListData.length; i++) {
-//       const todoListDataItem = todoListData[i];
-//       if (todoListDataItem.done == true) {
-//           console.log(todoListDataItem);
-//           doneItems++;
-//       }
-//   }
-
-//   amountTotal.innerHTML = todoListData.length;
-//   amountDone.innerHTML = doneItems;
-//   progressBar.style.width = (doneItems / todoListData.length) * 100 + "%";
-// }
 
 // VENTANA MODAL FUNCIONA
 
